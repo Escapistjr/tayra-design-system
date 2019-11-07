@@ -1,0 +1,55 @@
+// for phone only
+@mixin for-0px-599px {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+// for tablet portrait and up
+@mixin for-600px-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+// for tablet portrait only
+@mixin for-600px-899px {
+  @media (min-width: 600px) and (max-width: 899px) {
+    @content;
+  }
+}
+
+// for tablet landscape and up
+@mixin for-900px-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+// for tablet landscape only
+@mixin for-900px-1199px {
+  @media (min-width: 900px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+// for desktop and up
+@mixin for-1200px-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+// for desktop only
+@mixin for-1200px-1799px {
+  @media (min-width: 1200px) and (max-width: 1799px) {
+    @content;
+  }
+}
+
+// for big desktop and up
+@mixin for-1800px-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
